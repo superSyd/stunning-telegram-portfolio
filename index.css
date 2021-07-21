@@ -1,0 +1,154 @@
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 0px;
+}
+
+body {
+  background-color: #8d000d;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+}
+
+#nav-bar {
+  background-color: #8d000d;
+  width: 100%;
+  margin: 0px;
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav-bar li a {
+  display: block;
+  width: 80px;
+  padding: 18px 15px;
+  text-decoration: none;
+  color: #fff0f1;
+}
+
+#nav-bar li a:hover {
+  background-color: #2f0004;
+}
+
+#welcome-section {
+  background-color: #2f0004;
+  color: #fff0f1;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#welcome-section h1{
+  margin: auto;
+  font-size: 80px;
+}
+
+#projects {
+  background-color: #fff0f1;
+  padding: 20px;
+  margin: auto;
+
+}
+
+#contact {
+  background-color: #fff0f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contact a {
+  display: block;
+  padding: 18px 15px;
+  text-decoration: none;
+}
+
+.project-tile {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 30px;
+}
+
+.project-tile a {
+  display: block;
+  padding: 18px 15px;
+  text-decoration: none;
+  color: #fff0f1;
+}
+
+.myProject {
+    background-color: #2f0004;
+}
+
+.myProject:hover {
+  background-color: #690009;
+}
+
+#profile-link {
+  margin: auto;
+}
+
+@media (max-width: 581px){
+  #welcome-section h1{
+  margin: auto;
+  font-size: 50px;
+}
+  
+  #nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+  
+  #nav-bar li a {
+  display: block;
+  width: 64.6%;
+  padding: 18px 15px;
+  text-decoration: none;
+  color: #fff0f1;
+}
+}
+
+
+@media (max-width: 630px) {
+  #nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+  
+  #nav-bar li a {
+  display: block;
+  width: 64.6%;
+  padding: 18px 15px;
+  text-decoration: none;
+  color: #fff0f1;
+}
+  
+  .project-tile {
+    width: 100%;
+    background: #2f0004;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+}
